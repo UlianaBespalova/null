@@ -11,3 +11,4 @@ compiler:
 
 script:
   - ls
+  - g++ main.c Polygon_calculator.cpp -o Calculator
