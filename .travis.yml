@@ -10,6 +10,4 @@ compiler:
   - g++
 
 script:
-  - sudo apt update
-  - sudo apt install valgrind
-  - valgrind --version
+  - cppcheck --version
