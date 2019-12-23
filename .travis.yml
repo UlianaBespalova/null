@@ -10,4 +10,7 @@ compiler:
   - g++
 
 script:
-  - cppcheck --version
+  - git clone https://github.com/danmar/cppcheck.git
+  - pwd
+  - cd ..
+  - pwd
