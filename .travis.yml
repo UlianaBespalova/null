@@ -13,6 +13,6 @@ script:
   - ls
   - g++ main.c Polygon_calculator.cpp -o Calculator
   - ls
-  - ./Calculator << 4
-  - << 4
+  - ./Calculator << '4'
+  - '4'
 
