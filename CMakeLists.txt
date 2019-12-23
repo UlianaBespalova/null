@@ -5,7 +5,7 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_CXX_FLAGS "${CMAKE_C_FLAGS} -std=c++0x -Wall -ggdb3")
 
 
-add_executable(Calculator main.c Polygon_calculator.h Polygon_calculator.cpp)
+#add_executable(Calculator main.c Polygon_calculator.h Polygon_calculator.cpp)
 add_executable(unit_tests unit_tests.cpp Polygon_calculator.h Polygon_calculator.cpp)
 
 
