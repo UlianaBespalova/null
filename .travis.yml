@@ -10,5 +10,12 @@ compiler:
   - g++
 
 script:
+  - g++ main.c Polygon_calculator.cpp -o Calculator
+  - cmake CMakeLists.txt
+  - make
+  - ./unit_tests
+  - sudo apt update
+  - sudo apt install valgrind
+  - valgrind —tool=memcheck ./unit_tests
   - sudo apt-get install cppcheck
-  - cppcheck --version
+  - cppcheck --inconclusive --enable=all --language=c ./unit_tests
