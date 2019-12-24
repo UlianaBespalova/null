@@ -10,15 +10,5 @@ compiler:
   - g++
 
 script:
-  - git clone https://github.com/danmar/cppcheck.git
-  - ls
-  - cd cppcheck
-  - ls
-  - mkdir build
-  - cd build
-  - cmake ..
-  - cmake --build .
-  - ls
-  - cd ..
-  - ls
+  - sudo apt-get install cppcheck
   - cppcheck --version
