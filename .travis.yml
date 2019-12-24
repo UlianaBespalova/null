@@ -18,3 +18,7 @@ script:
   - cd build
   - cmake ..
   - cmake --build .
+  - ls
+  - cd ..
+  - ls
+  - cppcheck --version
