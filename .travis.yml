@@ -11,6 +11,9 @@ compiler:
 
 script:
   - git clone https://github.com/danmar/cppcheck.git
+  - cd ..
+  - cd ..
   - pwd
   - cd ..
   - pwd
+  - ls
