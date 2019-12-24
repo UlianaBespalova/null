@@ -12,11 +12,9 @@ compiler:
 script:
   - git clone https://github.com/danmar/cppcheck.git
   - ls
-  - cd ..
+  - cd cppcheck
   - ls
-  - cd ..
-  - pwd
-  - ls
-  - cd ..
-  - pwd
-  - ls
+  - mkdir build
+  - cd build
+  - cmake ..
+  - cmake --build .
