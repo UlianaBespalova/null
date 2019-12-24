@@ -16,5 +16,4 @@ script:
   - cmake CMakeLists.txt
   - make
   - ./unit_tests
-  - valgrind --tool=memcheck ./unit_tests
-
+  - valgrind ./unit_tests
