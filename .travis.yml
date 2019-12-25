@@ -11,6 +11,6 @@ compiler:
 
 script:
   - cd static
-  - gcc -c Static.c -o Static.o
+  - gcc -c Static.c -std=c99 -o Static.o
   - ar rc libStatic.a Static.o
   - rm Static.o
