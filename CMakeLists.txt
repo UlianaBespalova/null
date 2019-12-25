@@ -1,12 +1,12 @@
-cmake_minimum_required(VERSION 3.9.2)
+cmake_minimum_required(VERSION 3.10.2)
 project(Polygon_calculator)
 
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_CXX_FLAGS "${CMAKE_C_FLAGS} -std=c++0x -Wall -ggdb3")
 
 
-#add_executable(Calculator main.c Polygon_calculator.h Polygon_calculator.cpp)
-add_executable(unit_tests unit_tests.cpp Polygon_calculator.h Polygon_calculator.cpp)
+add_executable(Calculator main.c Polygon_calculator.c)
+add_executable(unit_tests unit_tests.cpp Polygon_calculator.c)
 
 
 
@@ -33,7 +33,5 @@ endif()
 
 #Link with GoogleTest
 target_link_libraries(unit_tests gtest gtest_main)
-#Link with GoogleMock
-#target_link_libraries(unit_tests gmock gmock_main)
 #===============================================================
 
