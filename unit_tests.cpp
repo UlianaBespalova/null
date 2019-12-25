@@ -18,7 +18,7 @@ protected:
         matrix_sample = (int**)malloc(m* sizeof(int*));
         for (int i=0; i<m; i++) matrix_sample[i]=(int*)malloc(sizeof(int)*n);
 
-        for (unsigned int i=0; i<m; ++i)
+        for (int i=0; i<m; ++i)
         {
             for (int j = 0; j < n; ++j)
             {
