@@ -12,8 +12,8 @@ compiler:
 script:
   - sudo apt update
   - sudo apt install valgrind
-  - g++ main.c Polygon_calculator.cpp -o Calculator
   - cmake CMakeLists.txt
   - make
+  - ls
   - ./unit_tests
   - valgrind ./unit_tests
