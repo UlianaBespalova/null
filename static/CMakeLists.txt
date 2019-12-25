@@ -3,4 +3,4 @@ project(static)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(static Static.c Static0.h)
+add_executable(static Static.c Static.h)
