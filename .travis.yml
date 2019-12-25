@@ -16,7 +16,7 @@ script:
   - rm Static.o
   - ls
   - cd ../dynamic
-  - gcc -c -Wall -Werror -fpic Dynamic.c
+  - gcc -c -Wall -Werror -std=c99 -fpic Dynamic.c
   - gcc -shared -o libDynamic.so Dynamic.o
   - ls
   - rm Dynamic.o
