@@ -10,4 +10,7 @@ compiler:
   - g++
 
 script:
-  - ls
+  - cd static
+  - gcc -c Static.c -o Static.o
+  - ar rc libStatic.a Static.o
+  - rm Static.o
