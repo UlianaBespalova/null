@@ -1,4 +1,4 @@
-#include "Static0.h"
+#include "Static.h"
 
 void Display_matrix (int **matrix, int m)
 {
