@@ -22,7 +22,8 @@ void Coordinates_input (const int n, double *arr_x, double *arr_y)
     if (!arr_x) {printf("Pointer 'x' is Null\n"); return;}
     if (!arr_y) {printf("Pointer 'y' is Null\n"); return;}
 
-    for (int i = 0; i < n; i++)
+    int i;
+    for (i = 0; i < n; i++)
     {
         char value_str[10];
         double value_x, value_y;
