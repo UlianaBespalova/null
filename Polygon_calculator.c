@@ -43,7 +43,8 @@ double Polygon_square(const int n, const double *arr_x, const double *arr_y)
 {
     double square = arr_x[n - 1] * arr_y[0] - arr_x[0] * arr_y[n - 1];
 
-    for (int i=0; i<n-1; i++)
+    int i;
+    for (i=0; i<n-1; i++)
     {
         square = square + arr_x[i] * arr_y[i + 1] - arr_x[i + 1] * arr_y[i];
     }
