@@ -6,7 +6,7 @@
 
 void show (int **matr, int nn, int mm)
 {
-    for (unsigned int i=0; i<mm; ++i)
+    for (int i=0; i<mm; ++i)
     {
         for (int j = 0; j < nn; ++j)
            printf  ("%d ", matr[i][j]);
