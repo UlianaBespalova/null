@@ -21,4 +21,4 @@ script:
   - cd ..
   - cmake CMakeLists.txt
   - make
-  - ls
+  - ./unit_tests
