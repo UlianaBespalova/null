@@ -20,5 +20,5 @@ script:
   - rm Dynamic.o
   - cd ..
   - cmake CMakeLists.txt
-  - make
+  - make -std=c99
   - ls
