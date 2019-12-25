@@ -14,9 +14,11 @@ script:
   - gcc -c Static.c -std=c99 -o Static.o
   - ar rc libStatic.a Static.o
   - rm Static.o
-  - ls
   - cd ../dynamic
   - gcc -c -Wall -Werror -std=c99 -fpic Dynamic.c
   - gcc -shared -o libDynamic.so Dynamic.o
-  - ls
   - rm Dynamic.o
+  - cd ..
+  - cmake CMakeLists.txt
+  - make
+  - ls
